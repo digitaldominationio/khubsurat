@@ -3,18 +3,18 @@ import { useSearchParams } from "react-router-dom"; // ✅ ADD
 
 // PRODUCTS (same as tera)
 const products = [
-  { id: 1, category: "SKINCARE", name: "Radiance Serum", price: "$45.00", image: "/skin1.jpg" },
-  { id: 2, category: "MAKEUP", name: "Velvet Lip Kit", price: "$120.00", image: "/makeup.jpg" },
-  { id: 3, category: "HAIRCARE", name: "Hair Growth Oil", price: "$58.00", image: "/hair1.jpg" },
-  { id: 4, category: "SKINCARE", name: "Face Cleanser", price: "$34.00", image: "/skin.jpg" },
-  { id: 5, category: "BEAUTY KITS", name: "Glow Kit", price: "$210.00", image: "/makup1.jpg" },
-  { id: 6, category: "MAKEUP", name: "Brush Set", price: "$85.00", image: "/makeup2.jpg" },
-  { id: 7, category: "HAIRCARE", name: "Shampoo Pro", price: "$40.00", image: "/shampoo.jpg" },
-  { id: 8, category: "SKINCARE", name: "Hydra Cream", price: "$60.00", image: "/skin2.jpg" },
-  { id: 9, category: "MAKEUP", name: "Matte Foundation", price: "$95.00", image: "/makeup3.jpg" },
-  { id: 10, category: "HAIRCARE", name: "Hair Serum Pro", price: "$50.00", image: "/hair2.jpg" },
-  { id: 11, category: "BEAUTY KITS", name: "Bridal Kit", price: "$250.00", image: "/kit2.jpg" },
-  { id: 12, category: "SKINCARE", name: "Night Repair Cream", price: "$70.00", image: "/skin3.jpg" },
+  { id: 1, category: "SKINCARE", name: "Radiance Serum", image: "/skin1.jpg" },
+  { id: 2, category: "MAKEUP", name: "Velvet Lip Kit", image: "/makeup.jpg" },
+  { id: 3, category: "HAIRCARE", name: "Hair Growth Oil", image: "/hair1.jpg" },
+  { id: 4, category: "SKINCARE", name: "Face Cleanser", image: "/skin.jpg" },
+  { id: 5, category: "BEAUTY KITS", name: "Glow Kit", image: "/makup1.jpg" },
+  { id: 6, category: "MAKEUP", name: "Brush Set", image: "/makeup2.jpg" },
+  { id: 7, category: "HAIRCARE", name: "Shampoo Pro", image: "/shampoo.jpg" },
+  { id: 8, category: "SKINCARE", name: "Hydra Cream", image: "/skin2.jpg" },
+  { id: 9, category: "MAKEUP", name: "Matte Foundation", image: "/makeup3.jpg" },
+  { id: 10, category: "HAIRCARE", name: "Hair Serum Pro", image: "/hair2.jpg" },
+  { id: 11, category: "BEAUTY KITS", name: "Bridal Kit", image: "/kit2.jpg" },
+  { id: 12, category: "SKINCARE", name: "Night Repair Cream", image: "/skin3.jpg" },
 ];
 
 const categories = ["ALL", "SKINCARE", "MAKEUP", "HAIRCARE", "BEAUTY KITS"];
@@ -77,7 +77,7 @@ const Productpages = () => {
               <div className="p-4">
                 <p className="text-sm text-gray-500">{item.category}</p>
                 <h3 className="text-lg font-semibold">{item.name}</h3>
-                <p className="text-[#7a4e57]">{item.price}</p>
+                
               </div>
             </div>
           ))}
